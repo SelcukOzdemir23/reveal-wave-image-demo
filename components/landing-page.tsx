@@ -60,12 +60,12 @@ const LandingPage = () => {
           mouseRadius={0.3}
           className="w-full h-full"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/70 pointer-events-none" />
       </div>
 
-      <div className="pt-24 space-y-24">
+      <div className="relative pt-24 space-y-24 z-20">
         {/* LAB FEED (STORIES) SECTION */}
-        <section className="relative px-6 z-50">
+        <section className="relative px-6">
           <div className="max-w-7xl mx-auto backdrop-blur-xl bg-white/5 rounded-full border border-white/10 p-3 shadow-2xl flex items-center gap-6">
             <div className="flex items-center gap-2 pl-4 border-r border-white/10 pr-6">
               <FlaskConical className="w-4 h-4 text-white/40" />
@@ -93,7 +93,7 @@ const LandingPage = () => {
         </section>
 
         {/* HERO SECTION WITH LIQUID GRADIENT */}
-        <section className="relative px-6">
+        <section className="relative px-6 z-20">
           <div className="max-w-7xl mx-auto">
             <LiquidGradient 
                 title="Synthesizing Digital Emotions"
@@ -121,45 +121,8 @@ const LandingPage = () => {
           </div>
         </section>
 
-        {/* PHILOSOPHY SECTION */}
-        <section className="relative py-32 px-6 backdrop-blur-[2px] bg-black/40 border-t border-white/5">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-24">
-              <div className="space-y-6">
-                <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-white/5 border border-white/10">
-                  <Zap className="w-5 h-5 text-white" />
-                </div>
-                <h3 className="text-sm uppercase tracking-[0.2em] font-black italic">Reactive Motion</h3>
-                <p className="text-white/40 text-sm leading-relaxed font-light">
-                  We believe interfaces should breathe. Our work focuses on organic movement that responds to human touch, not just static pixels.
-                </p>
-              </div>
-              
-              <div className="space-y-6">
-                <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-white/5 border border-white/10">
-                  <Layers className="w-5 h-5 text-white" />
-                </div>
-                <h3 className="text-sm uppercase tracking-[0.2em] font-black italic">Shader Crafts</h3>
-                <p className="text-white/40 text-sm leading-relaxed font-light">
-                  Specializing in WebGL and custom fragment shaders to push the boundaries of what's possible in a browser environment.
-                </p>
-              </div>
-
-              <div className="space-y-6">
-                <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-white/5 border border-white/10">
-                  <Globe className="w-5 h-5 text-white" />
-                </div>
-                <h3 className="text-sm uppercase tracking-[0.2em] font-black italic">Global Aesthetic</h3>
-                <p className="text-white/40 text-sm leading-relaxed font-light">
-                  Minimalist form met with maximum impact. We design for a global audience that values clarity, speed, and digital soul.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* FINAL MODULE SECTION */}
-        <section className="relative px-6 pb-48">
+        <section className="relative px-6 pb-48 z-20">
           <div className="max-w-7xl mx-auto">
             <ConnoisseurStackInteractor />
           </div>

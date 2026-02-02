@@ -260,7 +260,7 @@ export default function LiquidGradient({
       <div ref={containerRef} className="absolute inset-0 z-0" />
       
       <div className="absolute inset-0 flex flex-col items-center justify-center z-10 p-6 text-center pointer-events-none">
-          <h1 className="text-5xl md:text-8xl font-black italic tracking-tighter uppercase leading-[0.8] mb-8 drop-shadow-2xl">
+          <h1 className="text-5xl md:text-8xl font-black italic tracking-tighter uppercase leading-[0.8] mb-8 drop-shadow-2xl text-white" style={{textShadow: '0 2px 12px rgba(0,0,0,0.95), 0 6px 24px rgba(0,0,0,0.8), 0 0 40px rgba(0,0,0,0.6)'}}>
             {title.split(' ').map((word, i) => (
                 <span key={i} className="block">{word}</span>
             ))}

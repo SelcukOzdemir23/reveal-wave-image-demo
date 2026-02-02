@@ -104,7 +104,7 @@ export const ConnoisseurStackInteractor = ({
       {/* LEFT SIDE: HIGH CONTRAST MENU */}
       <div className="z-20 w-full md:w-1/2 p-8 md:p-24">
         <div className="mb-12">
-            <span className="text-[10px] uppercase tracking-[0.5em] font-black italic text-white/30">Select Module</span>
+            <span className="text-[10px] uppercase tracking-[0.5em] font-black italic text-white drop-shadow-lg" style={{textShadow: '0 2px 8px rgba(0,0,0,0.8), 0 4px 16px rgba(0,0,0,0.6)'}}>Select Module</span>
         </div>
         <nav>
           <ul className="flex flex-col gap-14">
@@ -116,20 +116,22 @@ export const ConnoisseurStackInteractor = ({
               >
                 <div className="flex items-start gap-8">
                   <span className={cn(
-                    "text-2xl font-black italic transition-all duration-500 mt-1",
+                    "text-2xl font-black italic transition-all duration-500 mt-1 drop-shadow-lg",
                     activeIndex === index 
                       ? "text-white scale-125" 
-                      : "text-white/10" 
-                  )}>
+                      : "text-white/40" 
+                  )}
+                  style={{textShadow: '0 2px 8px rgba(0,0,0,0.9), 0 4px 16px rgba(0,0,0,0.7)'}}>
                     {item.num}
                   </span>
                   
                   <h2 className={cn(
-                    "text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.8] transition-all duration-700 italic select-none",
+                    "text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.8] transition-all duration-700 italic select-none drop-shadow-2xl",
                     activeIndex === index 
                       ? "text-white opacity-100 translate-x-6" 
-                      : "opacity-10 translate-x-0 text-transparent [text-stroke:1px_rgba(255,255,255,0.4)] [-webkit-text-stroke:1px_rgba(255,255,255,0.4)]"
-                  )}>
+                      : "opacity-30 translate-x-0 text-white/50"
+                  )}
+                  style={{textShadow: '0 2px 12px rgba(0,0,0,0.95), 0 6px 24px rgba(0,0,0,0.8), 0 0 40px rgba(0,0,0,0.6)'}}>
                     {item.name.split(' ')[0]}<br />
                     {item.name.split(' ')[1]}
                   </h2>

@@ -26,10 +26,10 @@ export default function DemoOne() {
 
         {/* Overlay Text */}
         <div className="absolute bottom-8 left-8 text-white pointer-events-none">
-          <h1 className="text-4xl md:text-6xl font-black tracking-tighter uppercase mb-2">
+          <h1 className="text-4xl md:text-6xl font-black tracking-tighter uppercase mb-2 drop-shadow-2xl" style={{textShadow: '0 2px 12px rgba(0,0,0,0.95), 0 4px 24px rgba(0,0,0,0.8)'}}>
             Surreal <br /> Reflections
           </h1>
-          <p className="text-sm md:text-base text-white/60 font-medium tracking-wide">
+          <p className="text-sm md:text-base text-white/80 font-medium tracking-wide drop-shadow-lg" style={{textShadow: '0 2px 8px rgba(0,0,0,0.8)'}}>
             MOVE MOUSE TO REVEAL COLORS & RIPPLES
           </p>
         </div>
@@ -39,7 +39,7 @@ export default function DemoOne() {
           <div className="w-8 h-8 rounded-full border-2 border-white/50 flex items-center justify-center">
             <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
           </div>
-          <span className="text-white font-bold tracking-[0.2em] text-xs uppercase">
+          <span className="text-white font-bold tracking-[0.2em] text-xs uppercase drop-shadow" style={{textShadow: '0 2px 6px rgba(0,0,0,0.8)'}}>
             Vertex Labs
           </span>
         </div>
