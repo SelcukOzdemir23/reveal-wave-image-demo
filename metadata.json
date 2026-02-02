@@ -1,0 +1,5 @@
+{
+  "name": "Reveal Wave Image Demo",
+  "description": "A sophisticated React component featuring animated continuous waves, dithering effects, and a mouse-interactive flashlight reveal using Three.js and React Three Fiber.",
+  "requestFramePermissions": []
+}
